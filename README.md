@@ -1,1 +1,1 @@
-# pineapple_shop
+# Pineapple Shop
