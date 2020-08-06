@@ -6,7 +6,7 @@ export const storeProducts = [
       price: 1099.99,
       model: "MWGY2LL/A",
       description:
-        "Shoot amazing videos and photos with the Ultra Wide, Wide, and Telephoto cameras. Capture your best low-light photos with Night mode. Watch HDR movies and shows on the 6.5-inch Super Retina XDR display – the brightest iPhone display yet.¹ Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And get all-day battery life² and a new level of water resistance.³ All in the first iPhone powerful enough to be called Pro.",
+        "Shoot amazing videos and photos with the Ultra Wide, Wide, and Telephoto cameras. Capture your best low-light photos with Night mode. Watch HDR movies and shows on the 6.5-inch Super Retina XDR display – the brightest iPhone display yet. Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And get all-day battery life and a new level of water resistance. All in the first iPhone powerful enough to be called Pro.",
       inCart: false,
       count: 0,
       total: 0
@@ -40,13 +40,13 @@ export const storeProducts = [
   
   export const detailProduct = {
     id: 1,
-    title: "Google Pixel - Black",
-    img: "img/iphone-11-pro-max-sg.jpg",
-    price: 10,
-    model: "google",
-    description:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    inCart: false,
-    count: 0,
-    total: 0
+      title: "iPhone 11 Pro Max 64GB - Space Gray",
+      img: "img/iphone-11-pro-max-sg.jpg",
+      price: 1099.99,
+      model: "MWGY2LL/A",
+      description:
+        "Shoot amazing videos and photos with the Ultra Wide, Wide, and Telephoto cameras. Capture your best low-light photos with Night mode. Watch HDR movies and shows on the 6.5-inch Super Retina XDR display – the brightest iPhone display yet.¹ Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. And get all-day battery life and a new level of water resistance. All in the first iPhone powerful enough to be called Pro.",
+      inCart: false,
+      count: 0,
+      total: 0
   };

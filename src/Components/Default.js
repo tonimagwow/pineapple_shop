@@ -4,7 +4,7 @@ export default class Default extends Component {
     render() {
         return (
             <div>
-                <h3>Work in progress</h3>
+                <h3>This Page is a work in progress</h3>
             </div>
         )
     }
