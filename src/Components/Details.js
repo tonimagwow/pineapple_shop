@@ -7,7 +7,7 @@ export default class Details extends Component {
     render() {
         return (
             <ProductConsumer>
-                {(value) => {
+                {value => {
                     const { 
                         id, 
                         model, 
@@ -31,12 +31,35 @@ export default class Details extends Component {
                                     <img src={img} className="img-fluid" alt="product" />
                                 </div>
                                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                                    <h5>{model}</h5>
-                                    <h5 className="text-title text-uppercase text-muted mt-3 mb-2">
-                                        <span className="text-uppercase">
-                                            {description}
-                                        </span>
-                                    </h5>
+                                    <h6>model : {model}</h6>
+                                    <h6>
+                                        <strong className="mt-4">
+                                            price : <span>$</span>
+                                            { price }
+                                        </strong>
+                                    </h6>
+
+                                    <p className="text-capitalize font-weight-bold mt-2 mb-0">
+                                        description :                                        
+                                    </p>
+                                    <p className="text-muted">
+                                        { description }
+                                    </p>
+                                    <div>
+                                        <Link to='/'>
+                                            <ButtonContainer>
+                                                product list
+                                            </ButtonContainer>
+                                        </Link>
+                                        <ButtonContainer
+                                            disabled= {inCart ? true : false}
+                                            onClick={() =>{
+                                                value.addToCart(id);
+                                            }}
+                                        >
+                                            {inCart ? "inCart" : "add to cart"}
+                                        </ButtonContainer>
+                                    </div>
                                 </div>
                             </div>
                         </div>
