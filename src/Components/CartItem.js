@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function CartItem({item, value}) {
     const { id, title, img, price, total, count } = item;
-    const { increase, decrease, remove, clearCart } = value
+    const { increase, decrease, remove } = value
     return (
-        <div className="row my-1 text-capitalize text-center">
+        <div className="row my-2 text-capitalize text-center">
             <div className="col-10 mx-auto col-lg-2">
                 <img 
                     src={img} 
@@ -13,7 +13,7 @@ export default function CartItem({item, value}) {
                     alt="product image" 
                 />
             </div>
-            <div className="col-10 mx-auto col-lg-2 my-2">
+            <div className="col-10 mx-auto col-lg-2">
                 <span className="d-lg-none">product : </span>
                 {title}
             </div>
@@ -43,11 +43,9 @@ export default function CartItem({item, value}) {
                 </div>
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <div className="cart-icon">
-                    NEED MORE WORK HERE!!!!!LOOOK AT MEEEEE
-
-                </div>
-                
+                <div className="cart-icon" onClick={() => remove(id)}>
+                    <i className="fas fa-trash-alt" />
+                </div>                
             </div>
             <div className="col-10 mx-auto col-lg-2">
                 <strong>item total : $ {total}</strong>                

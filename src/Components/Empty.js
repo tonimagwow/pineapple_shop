@@ -7,6 +7,7 @@ export default function Empty() {
             <div className="row">
                 <div className="col-10 mx-auto text-center text-title">
                     <Title name="empty sopping cart" />
+                    {/* add a button to go back */}
                 </div>
             </div>
         </div>

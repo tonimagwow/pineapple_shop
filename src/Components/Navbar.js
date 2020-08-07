@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { ButtonContainer, Navigation } from '../Styles/styles'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { ButtonContainer, Navigation } from '../Styles/styles';
 
 
 

@@ -30,6 +30,10 @@ body {
   color: var(--mainWhite);
 }
 
+.text-yellow {
+  color: var(--mainYellow);
+}
+
 .btn-yellow {
   color: var(--mainYellow);
   background: transparent;
