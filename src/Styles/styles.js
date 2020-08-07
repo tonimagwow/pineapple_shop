@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const Navigation = styled.nav`
+    background: var(--mainBlue)!important;
+    .nav-link {
+        color: var(--mainWhite)!important;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+
+`;
+
 export const ButtonContainer = styled.button`
     text-transform: capitalize;
     font-size: 1.4rem;
@@ -19,16 +29,6 @@ export const ButtonContainer = styled.button`
 &:focus {
     outline: none;
 }
-`;
-
-export const Navigation = styled.nav`
-    background: var(--mainBlue)!important;
-    .nav-link {
-        color: var(--mainWhite)!important;
-        font-size: 1.3rem;
-        text-transform: capitalize;
-    }
-
 `;
 
 export const ProductWrapper = styled.div`
