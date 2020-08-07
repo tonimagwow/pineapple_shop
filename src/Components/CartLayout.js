@@ -3,10 +3,10 @@ import React from 'react';
 export default function CartLayout() {
    
     return (
-         <div className="container-fluid text-center d-none d-lg-block">
+         <div className="container-fluid text-center d-none d-lg-block mt-5">
              <div className="row">
                  <div className="col-10 mx-auto col-lg-2">
-                     <p className="text-uppercase">products</p>
+                     <p className="text-uppercase">Items</p>
                  </div>
                  <div className="col-10 mx-auto col-lg-2">
                      <p className="text-uppercase">title</p>

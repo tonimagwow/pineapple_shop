@@ -6,9 +6,8 @@ export default function Empty() {
         <div className="container mt-5">
             <div className="row">
                 <div className="col-10 mx-auto text-center text-title">
-                    <Title name="empty shpping cart" />
+                    <Title name="empty sopping cart" />
                 </div>
-
             </div>
         </div>
     )

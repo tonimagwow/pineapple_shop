@@ -14,17 +14,15 @@ export default class ShoppingCart extends Component {
                         const {cart} = value;
                         if (cart.length > 0) {
                             return (
+                                // display items in cart
                                 <React.Fragment>
-                                    <section className="mt-5">
-                                        <Title name="Shopping Cart" />                    
-                                    </section>
-                                    <section className="mt-5">
-                                        <CartLayout  />
-                                        <ListItems value={value} />                 
-                                    </section>
+                                    <Title name="Shopping Cart" />
+                                    <CartLayout  />
+                                    <ListItems value={value} />
                                 </React.Fragment>
                             );
                         } else {
+                            // if cart is empty show empty component
                             return (
                                 <section className="mt-5">                    
                                     <Empty />

@@ -1,9 +1,10 @@
 :root {
   --mainBlue:#2a2a72;
+  --mainBbyBlue:#0A4ABF;
   --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
   --mainDark:#232528;
-  --mainYellow:#ffa400;
+  --mainYellow:#F6EB16;
 }
 
 body {
@@ -28,3 +29,4 @@ body {
 .text-white {
   color: let(--mainWhite);
 }
+

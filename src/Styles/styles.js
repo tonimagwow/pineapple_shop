@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Navigation = styled.nav`
-    background: var(--mainBlue)!important;
+    background: var(--mainBbyBlue)!important;
     .nav-link {
         color: var(--mainWhite)!important;
         font-size: 1.3rem;
