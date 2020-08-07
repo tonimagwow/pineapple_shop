@@ -11,7 +11,7 @@ export default class Navbar extends Component {
             <Link to='/'>
                 <img src="/img/Pineapple_Main_Color.png" alt="store" className="navbar-brand" />
             </Link>
-            <h1 className="navbar-nav mt-4 mr-auto text-white">Pineapple</h1>            
+            <h1 className="navbar-nav mt-4 mr-auto text-white">fix Pineapple</h1>            
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item ml-5"></li>
                 <Link to='/' className="nav-link mt-4">
