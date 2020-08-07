@@ -28,7 +28,11 @@ export default class Details extends Component {
                             {/* Product description */}
                             <div className="row">
                                 <div className="col-10 mx-auto col-md-6 my-3">
-                                    <img src={img} className="img-fluid" alt="product" />
+                                    <img 
+                                        src={img} 
+                                        className="img-fluid" 
+                                        alt="product" 
+                                    />
                                 </div>
                                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                                     <h6>model : {model}</h6>
@@ -48,7 +52,7 @@ export default class Details extends Component {
                                     <div>
                                         <Link to='/'>
                                             <ButtonContainer>
-                                                product list
+                                                keep shopping
                                             </ButtonContainer>
                                         </Link>
                                         <ButtonContainer

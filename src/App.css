@@ -23,5 +23,8 @@ body {
 }
 
 .text-bright {
-  color: car(--lightBlue)
+  color: var(--lightBlue);
+}
+.text-white {
+  color: let(--mainWhite);
 }

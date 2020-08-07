@@ -14,7 +14,8 @@ export default class Product extends Component {
         } = this.props.product;
         return (
             <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
-                <div className="card">
+                <div className="card ">
+                    {/* revisit to fix height on card div (h-100)*/}
                     <ProductConsumer>
                         {value => (
                             <div 
@@ -29,6 +30,8 @@ export default class Product extends Component {
                                         src={img} 
                                         alt="product" 
                                         className="card-img-top"
+                                        // height="300"   REVISIT
+                                        // width="300"
                                     />
                                 </Link>
                                 <button 
