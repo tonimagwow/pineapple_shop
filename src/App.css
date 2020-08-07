@@ -1,6 +1,6 @@
 :root {
   --mainBlue:#2a2a72;
-  --mainBbyBlue:#0A4ABF;
+  --mainBbyBlue:#0046be;
   --lightBlue:#009ffd;
   --mainWhite:#f3f3f3;
   --mainDark:#232528;
@@ -27,6 +27,25 @@ body {
   color: var(--lightBlue);
 }
 .text-white {
-  color: let(--mainWhite);
+  color: var(--mainWhite);
 }
 
+.btn-yellow {
+  color: var(--mainYellow);
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--mainYellow) !important;
+}
+
+.btn-yellow:hover {
+  color: var(--mainYellow)!important;
+  background: var(--mainBbyBlue)!important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainBlue);
+}

@@ -58,11 +58,11 @@ class ProductProvider extends Component {
             }
         );
     };
-    increment = (id) => {
-        console.log('increments working')
+    increase = (id) => {
+        console.log('increase working')
     }
-    decrement = (id) => {
-        console.log('decrements working')
+    decrease = (id) => {
+        console.log('decrease working')
             
     }
     remove = (id) => {
@@ -80,8 +80,8 @@ class ProductProvider extends Component {
                     ...this.state,
                     handleDetail: this.handleDetail,
                     addToCart: this.addToCart,
-                    increment: this.increment,
-                    decrement: this.decrement,
+                    increase: this.increase,
+                    decrease: this.decrease,
                     remove: this.remove,
                     clearCart: this.clearCart,
                 }}
