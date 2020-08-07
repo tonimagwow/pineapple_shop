@@ -3,6 +3,7 @@ import Title from './Title';
 import CartLayout from './CartLayout';
 import Empty from './Empty';
 import { ProductConsumer } from "../context";
+import ListItems from './ListItems'
 
 export default class ShoppingCart extends Component {
     render() {
@@ -18,7 +19,8 @@ export default class ShoppingCart extends Component {
                                         <Title name="Shopping Cart" />                    
                                     </section>
                                     <section className="mt-5">
-                                        <CartLayout  />                    
+                                        <CartLayout  />
+                                        <ListItems value={value} />                 
                                     </section>
                                 </React.Fragment>
                             );
