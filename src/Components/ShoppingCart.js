@@ -4,6 +4,7 @@ import CartLayout from './CartLayout';
 import Empty from './Empty';
 import { ProductConsumer } from "../context";
 import ListItems from './ListItems'
+import Total from './Total'
 
 export default class ShoppingCart extends Component {
     render() {
@@ -19,6 +20,7 @@ export default class ShoppingCart extends Component {
                                     <Title name="Shopping Cart" />
                                     <CartLayout  />
                                     <ListItems value={value} />
+                                    <Total value={value} />
                                 </React.Fragment>
                             );
                         } else {
