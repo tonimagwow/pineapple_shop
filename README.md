@@ -13,7 +13,6 @@ General App Idea/Purpose: An app that allows
     -Mongoose
     -Express
     -React
-    -Node.js
     -HTML
     -CSS
     -Bootstrap
