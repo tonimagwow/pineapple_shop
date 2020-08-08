@@ -57,8 +57,7 @@ class ProductProvider extends Component {
             () => {
                 this.addTotals()
                 // console.log(this.state);
-            }
-            
+            }            
         );
     };
 
@@ -75,9 +74,14 @@ class ProductProvider extends Component {
             
     }
     clear = () => {
-        console.log('clears working')
-            
-    }
+        // console.log('clears working')
+        this.setState(() => {
+            return {cart:[]}
+        }, () => {
+            this.setProducts();
+            this.addTotals();
+        });
+    };
     // total price and tax combined
     addTotals = () => {
         let subAmount = 0;
