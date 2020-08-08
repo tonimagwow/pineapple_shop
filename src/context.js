@@ -54,8 +54,11 @@ class ProductProvider extends Component {
         this.setState(() => {
             return { products: tempProducts, cart: [...this.state.cart, product] };
             },
-            () => {console.log(this.state);
+            () => {
+                this.addTotals()
+                // console.log(this.state);
             }
+            
         );
     };
 
@@ -75,9 +78,21 @@ class ProductProvider extends Component {
         console.log('clears working')
             
     }
+    // total price and tax combined
     addTotals = () => {
-        let subTotal = 0;
-        this.state.cart.map(item => (subtotal += item.total))
+        let subAmount = 0;
+        this.state.cart.map(item => (subAmount += item.total));
+        const taxAmount = subAmount * 0.1;
+        const overAllTax = parseFloat(taxAmount.toFixed(2));
+        const overAllTotal = subAmount + overAllTax
+        
+        this.setState(() => {
+            return {
+                subTotal: subAmount,
+                tax: overAllTax,
+                total: overAllTotal
+            }             
+        })
     }
 
     render() {
