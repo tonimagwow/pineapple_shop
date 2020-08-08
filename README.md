@@ -26,6 +26,6 @@ General App Idea/Purpose: An app that allows
     -Footer
 
 ## Wireframes
-![Home](final/pineapple/public/wireframes/Pineapple Home.png)
-![Productlist](final/pineapple/public/wireframes/Product list.png)
-![Cart](final/pineapple/public/wireframes/Shopping cart.png)
+![Home](https://github.com/tonimagwow/pineapple_shop/blob/master/public/wireframes/Pineapple%20Home.png?raw=true)
+![Productlist](fhttps://github.com/tonimagwow/pineapple_shop/blob/master/public/wireframes/Product%20list.png?raw=true)
+![Cart](https://github.com/tonimagwow/pineapple_shop/blob/master/public/wireframes/Shopping%20cart.png?raw=true)
