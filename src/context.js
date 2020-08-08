@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import { storeProducts, detailProduct } from './Products/items'
 
 const ProductContext = React.createContext();
-// provide info
-
 
 
 class ProductProvider extends Component {
@@ -70,9 +68,31 @@ class ProductProvider extends Component {
             
     }
     remove = (id) => {
-        console.log('removes working')
-            
-    }
+        // console.log('removes working')
+        let tempProducts = [...this.state.products];
+        let tempCart = [...this.state.cart];
+
+        tempCart = tempCart.filter(item => item.id !== id);
+
+        const index = tempProducts.indexOf(this.getItem(id));
+        let removeProduct = tempProducts[index];
+        removeProduct.inCart = false;
+        removeProduct.count = 0;
+        removeProduct.total = 0;
+
+        this.setState(
+            () => {
+                return {
+                    cart: [...tempCart],
+                    products: [...tempProducts]
+                }
+            },
+            () => {
+                this.addTotals();
+            }
+        );
+    };
+
     clear = () => {
         // console.log('clears working')
         this.setState(() => {
