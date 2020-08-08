@@ -61,12 +61,48 @@ class ProductProvider extends Component {
 
     // add totals for the cart
     increase = (id) => {
-        console.log('increase working')
+        // console.log('increase working')
+        let tempCart = [...this.state.cart];
+        const selectedProduct = tempCart.find(item => item.id === id)
+        const index = tempCart.indexOf(selectedProduct);
+        const product = tempCart[index];
+        product.count = product.count + 1;
+        product.total = product.count * product.price;
+
+        this.setState(
+            () => {
+                return { cart:[...tempCart] };
+            },
+            () => {
+                this.addTotals()
+            }
+        )          
     }
+
     decrease = (id) => {
-        console.log('decrease working')
+        // console.log('decrease working')
+        let tempCart = [...this.state.cart];
+        const selectedProduct = tempCart.find(item => item.id === id)
+        const index = tempCart.indexOf(selectedProduct);
+        const product = tempCart[index];
+        product.count = product.count - 1;
+        
+        if (product.count === 0) {
+            this.remove(id);
+        } else {
+            product.total = product.count * product.price;
             
+            this.setState(
+                () => {
+                    return { cart:[...tempCart] };
+                },
+                () => {
+                    this.addTotals()
+                }
+            )          
+        }
     }
+
     remove = (id) => {
         // console.log('removes working')
         let tempProducts = [...this.state.products];
@@ -102,6 +138,7 @@ class ProductProvider extends Component {
             this.addTotals();
         });
     };
+
     // total price and tax combined
     addTotals = () => {
         let subAmount = 0;

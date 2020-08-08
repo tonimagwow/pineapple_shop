@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { ProductConsumer } from "../context";
 import Title from './Title';
 import CartLayout from './CartLayout';
 import Empty from './Empty';
-import { ProductConsumer } from "../context";
 import ListItems from './ListItems'
 import Total from './Total'
 
