@@ -10,7 +10,7 @@ class ProductProvider extends Component {
     state = {
         products: [],
         detailProduct: detailProduct,
-        cart:storeProducts,
+        cart:[],
         subTotal: 0,
         tax: 0,
         total: 0
@@ -58,6 +58,8 @@ class ProductProvider extends Component {
             }
         );
     };
+
+    // add totals for the cart
     increase = (id) => {
         console.log('increase working')
     }
@@ -73,6 +75,11 @@ class ProductProvider extends Component {
         console.log('clears working')
             
     }
+    addTotals = () => {
+        let subTotal = 0;
+        this.state.cart.map(item => (subtotal += item.total))
+    }
+
     render() {
         return (
             <ProductContext.Provider 
