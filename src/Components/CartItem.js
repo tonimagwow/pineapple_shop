@@ -10,7 +10,7 @@ export default function CartItem({item, value}) {
                     src={img} 
                     // style={{ width: "5rem", height: "3.5rem" }} REVISIT
                     className="img-fluid my-2" 
-                    alt="product image" 
+                    alt="product pic" 
                 />
             </div>
             <div className="col-10 mx-auto col-lg-2">
