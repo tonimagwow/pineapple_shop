@@ -108,7 +108,7 @@ export const storeProducts = [
       total: 0
     },
     {
-      id: 11,
+      id: 10,
       title: "Pineapple - iPod touch® 256GB MP3 Player ",
       img: "img/ipod.jpg",
       price: 399.99,
